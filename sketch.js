@@ -30,7 +30,7 @@ ground.x=ground.width/2
 
 }    
 spawnObstacles();
-
+console.log(runner.y)
     drawSprites();
 }
 function spawnObstacles(){

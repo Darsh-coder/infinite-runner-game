@@ -52,7 +52,9 @@ restart.addImage(restartImg);
 gameOver.scale = 0.5;
 restart.scale = 0.5;
 runner.setCollider("rectangle",0,0,runner.width-20,runner.height-20)
-runner.collider.visible=true
+//runner.debug=true
+
+inground.visible=false
 }
 
 function draw() {
@@ -70,7 +72,7 @@ function draw() {
             }
          
             
-            if(keyDown("space")&& runner.y>380) {
+            if(keyDown("space")&& runner.y>365) {
          runner.velocityY=-7;
    runner.changeAnimation("jump",runnerjumpimg)
    jumpSound.play();
@@ -140,7 +142,7 @@ function spawnObstacles(){
       //add each obstacle to the group
        obstaclesGroup.add(obstacle);
        console.log("obsticles")
-    
+     // obstacle.debug=true
 
 }
 }
